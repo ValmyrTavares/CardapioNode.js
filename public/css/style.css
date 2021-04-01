@@ -1,0 +1,183 @@
+*{
+    font-family: arial;
+}
+
+header{
+    width: 100%;
+}
+header img{
+    width: 100%;
+}
+
+/* ADMIN */
+.admin{
+    position: absolute;
+    top: 34vw;
+    left: 86vw;
+    color: white;
+    font-size: 2vw;    
+    text-decoration: none;
+}
+.container-edit{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    column-gap: 10px;
+    margin: 11px;
+}
+
+.container{
+    width: 90%;
+    margin:40px 5%;
+    font-size: 16px;
+}
+.container h1{
+    text-align: center;
+}
+.container label{
+    display: block;
+    width: 78%;
+    margin: 2px auto;
+    font-weight: 600;
+    font-size:20px;
+}
+.container input,textarea,select{
+    width: 80%;
+    margin:10px 10%;
+    min-height: 25px;
+    font-size:16px
+}
+.container porcoes{
+    margin:10px auto;
+}
+.container form button{
+    background:lightgreen;
+    color:white;
+    border:1px solid black;
+    width:50%;
+    margin:30px 25%;
+    padding:10px 25px;
+    font-size:20px;
+}
+fieldset{
+    background:#d3d3d336;
+}
+.del-edit{
+    background:lightgreen;
+    color:white;
+    border:none;
+    width:50%;
+    margin:10px 25%;
+    padding:10px 25px;
+    font-size:20px;
+}
+
+/*ADMIN EDIT DELETE*/
+
+    table{
+        width: 90%;
+        margin:5px 5%;
+    }
+    
+    table td, th{
+        text-align: center;
+        border:solid 1px black;
+        padding: 8px;
+    }
+    table tr:nth-child(even)
+    {background-color: #f2f2f2;}
+
+    .edit-products{
+        text-align: center;
+    }
+        
+
+
+/* MENU PRINCIPAL */
+
+.portion-title{
+    background:#300e21f2;
+    padding: 9px;
+    text-align:center;
+    margin: 2px;
+    font-size: 1.4rem;
+    color:white;
+    font-family: monospace;
+}
+
+.card{
+    text-align: center;
+    border:solid 1px black;
+    font-size: 14px;
+    width: 100%;
+    display:grid;
+    grid-template-columns: 1fr 3fr 50px;
+    color:white;
+    
+}
+.toggle{
+    cursor:pointer;
+}
+
+.hide{
+    display:none;
+}
+h5{
+    text-align:center;
+    background:#cccccc61;
+    width: 50%;
+    margin: 10px 25%;
+    padding:7px 0;
+}
+.body{
+    background:#400e2af2;
+}
+/*MODAL*/
+.modal-window{
+    width: 60%;
+    margin: 2px 10%;
+    background: #ccc;
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    text-align: center;
+    display:none;
+}
+.modal-window img{
+    width: 90%;
+    margin:5px 5%;
+}
+.modal-window button{
+    font-size: 30px;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    cursor: pointer;
+}
+.show{
+    display: block;
+}
+
+
+/*CAROOSSEL */
+.carrossel{
+    width: 100%;
+}
+.carrossel img{
+    width: 60%;
+    margin: 5px 20%;
+    max-height: 120px;
+}
+.carrossel h1{
+    color:white;
+    text-align: center;
+    margin:10px;
+    font-size:4vw;
+}
+.main-title{
+    color:white;
+    text-align: center;
+    margin:10px;
+    font-size:7vw;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>adminMenu</title>
+</head>
+<body>
+    <header>
+     <a href="/">   <img src="/assets/FRONT.png" alt="front do site"></a>
+    </header>
+
+    <a href="/admin/edit"><button class="del-edit">Edite pratos cadastrados</button></a>
+    <div class="container">
+        <h1>Cadastre os seus pratos de porções</h1>
+        <form class="porcoes" method='POST' action="/produtos">          
+            <fieldset>
+                <label>Titulo</label>
+                <legend>Preencha os cada campo</legend>
+                <input name="title" type="text">
+                <label>Descrição breve</label>
+                <textarea name="briefDescription" ></textarea>
+                <label>Descrição Completa</label>
+               <textarea name="largeDescription" ></textarea>
+                <label>Preço</label>
+                <input name="price" type="number">  
+                <label>Escolha a categoria do prato</label>  
+                <select name="category" >
+                    <option value="cervejas">cervejas</option>
+                    <option value="destilados">Destilados</option>
+                    <option value="sucos">Sucos</option>
+                    <option value="drinks">Drinks</option>
+                    <option value="refrigerantes">Refrigerantes</option>
+                    <option value="porcoes">Porções</option>
+                    <option value="pratos">Pratos</option>
+                    <option value="lanches">Lanches</option>
+                    <option value="salgados">Salgados</option>
+                </select>
+                <label>Imagem</label>
+                <input name="img" type="text">
+                <button type="submit">Enviar</button>
+            </fieldset>
+                
+        </form>
+    </div>
+   
+</body>
+</html>
+
+
+       
+
+        
+      

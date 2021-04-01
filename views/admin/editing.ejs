@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<header>
+    <a href="/">   <img src="/assets/FRONT.png" alt="front do site"></a>
+   </header>
+   <a class="admin" href="/admin">admin</a>
+<body>
+    <div class="container">
+        <h1>Editar Produto</h1>   
+        <form class="porcoes" method='POST' action="/produtos/update">
+            <fieldset>
+                <label>Titulo</label>
+                <input name="title" type="text" value="<%=produtos.title%>"/>
+                <label>Descrição breve</label>           
+                <input name="briefDescription" type="text" value="<%=produtos.briefDescription%>"/>
+                <label> Descrição Completa </label>          
+               <input name="largeDescription" type="text" value="<%=produtos.largeDescription%>"/>
+                <label>Preço</label>
+                <input name="price" type="number" value="<%=produtos.price %>"/>  
+                <label>Escolha a categoria do prato</label>  
+                <select name="category"value="<%=produtos.category%>" >
+                    <option value="cervejas">cervejas</option>
+                    <option value="destilados">Destilados</option>
+                    <option value="sucos">Sucos</option>
+                    <option value="drinks">Drinks</option>
+                    <option value="refrigerantes">Refrigerantes</option>
+                    <option value="porcoes">Porções</option>
+                    <option value="pratos">Pratos</option>
+                    <option value="lanches">Lanches</option>
+                    <option value="salgados">Salgados</option>
+                </select>
+                <label>Imagem</label>
+                <input name="img" type="text" value="<%=produtos.img%>"/>            
+                <label style="display: inline; margin-left:98px; margin-top: 20px"> Acrescente o produto a sugestão do chef</label>
+                <input type="checkbox" name="showcase" style="width:40px" name="showcase" value="produtos.view">
+                <input name="id" type="hidden" value="<%=produtos.id%>"/> 
+                <button type="submit">Enviar</button>
+            </fieldset>
+
+        </form>
+    </div>
+</body>
+</html>
