@@ -16,11 +16,12 @@
     <h1 class="main-title">Sugestão do Chef</h1>
     <div class="carrossel">       
         <% produtos.forEach((produto)=>  { %>       
-            <% if(produto.view == "1") %>
+            <% if(produto.view == "1"){ %>
                 <div class="carrossel-container hide" >
-                  <img src="<%= produto.img%>" alt="destaque"/>
+                  <img src="<%= produto.img%>" alt="destaque"/>                
                     <h1><%=produto.title%> </h1>                  
-                </div>                          
+                </div>    
+            <%}%>                          
         <%}) %>     
     </div>
                    
