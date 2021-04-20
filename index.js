@@ -133,7 +133,7 @@ app.post("/produtos/update", (req,res)=>{
 })
 
 
-app.listen(8081, ()=>{
+app.listen(3000, ()=>{
     console.log("Estamos na porta 8081")
 })
 
