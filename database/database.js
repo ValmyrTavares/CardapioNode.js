@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 
-const connection = new Sequelize('bancogourmet',' valmyrlima','Amanda230406',{
-    host:'mysql743.umbler.com',
+const connection = new Sequelize('bancogourmet','root','Amanda@230406',{
+    host:'localhost',
     dialect:'mysql'
 });
 
